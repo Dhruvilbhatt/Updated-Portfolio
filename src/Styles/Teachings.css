@@ -1,3 +1,14 @@
+@media screen and (max-width: 520px) {
+    .section-title {
+        font-size: 30px;
+    }
+
+    .pb-intro-wrapper {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
 .teaching-container {
     margin: 20px;
     display: flex;
@@ -48,7 +59,7 @@
     margin-bottom: 20px;
 }
 
-.teach-time{
+.teach-time {
     margin-bottom: 20px;
     font-size: large;
 }
@@ -65,7 +76,7 @@
     /* text-yellow-300 duration-[200ms] underline */
 }
 
-.location{
+.location {
     /* font-size: 0.8em; */
     font-weight: 100;
 }
@@ -100,25 +111,23 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .teaching-container{
+    .teaching-container {
         flex-direction: column;
     }
 
-    .teaching-image{
+    .teaching-image {
         margin-bottom: 20px;
         width: 180px;
     }
 
-    .teaching-center-wrapper
-    {
+    .teaching-center-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
 
-    .teaching-wrapper
-    {
+    .teaching-wrapper {
         margin: 0;
         width: 100%;
     }

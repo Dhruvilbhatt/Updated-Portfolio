@@ -16,7 +16,7 @@ function Projects() {
                     <div className='school-logo-container'>
                         <AccountTreeIcon className='school-logo' fontSize='large' style={{ color: "white" }} />
                     </div>
-                    <div>
+                    <div className='section-title'>
                         Projects
                     </div>
                 </div>
