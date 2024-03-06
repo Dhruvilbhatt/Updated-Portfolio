@@ -299,6 +299,12 @@
     position: relative;
 }
 
+@media screen and (max-width: 402px) {
+    .container .box .title h1 {
+        font-size: 35px;
+    }
+}
+
 .container .box .title h1 span {
     width: 0px;
     height: 0px;
