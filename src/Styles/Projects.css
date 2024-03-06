@@ -1,0 +1,182 @@
+.projects-container {
+  margin-top: 20px;
+  min-height: 100vh;
+  /* margin-top: 100px; */
+  /* width: 1200px !important; */
+  padding: 0 !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .container {
+    max-width: 1279px !important;
+    padding: 0 !important;
+    margin: 0 80px !important;
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 959px !important;
+    margin: 0 16px !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+}
+
+.gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding: 30px;
+  padding-top: 0px;
+}
+
+@media screen and (max-width: 991px) {
+  .gradient-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.container-title {
+  text-align: center;
+  padding: 0 !important;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.projects-card {
+  /* max-width: 550px; */
+  border: 0;
+  /* width: 30vw; */
+  margin-inline: auto;
+  background: transparent;
+  display: flex;
+}
+
+.container-card {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 45px;
+  padding: 40px;
+  padding-right: 0px;
+}
+
+.container-card img {
+  margin-bottom: 32px;
+}
+
+.bg-green-box,
+.bg-white-box,
+.bg-yellow-box,
+.bg-blue-box {
+  position: relative;
+}
+
+.bg-green-box::after,
+.bg-white-box::after,
+.bg-yellow-box::after,
+.bg-blue-box::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 45px;
+}
+
+.bg-green-box::after {
+  background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+}
+
+.bg-white-box::after {
+  background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+}
+
+.bg-yellow-box::after {
+  background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+}
+
+.bg-blue-box::after {
+  background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+}
+
+.card-title {
+  font-weight: 500;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 40px;
+  font-style: normal;
+  font-size: 28px;
+  padding-bottom: 8px;
+  padding-right: 40px;
+}
+
+.card-description {
+  font-weight: 100;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  max-width: 470px;
+  padding-right: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.project-card-img-icon {
+  z-index: 1000;
+}
+
+.education-wrapper {
+  margin: 40px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.education {
+  display: flex;
+  /* margin-left: 20px; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ed-intro {
+  display: flex;
+  margin-left: 20px;
+  font-size: 40px;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.ed-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+  color: #8ba2a3;
+}
+
+.school-logo-container {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.school-logo {
+  /* margin-right: 20px; */
+  padding: 0;
+}

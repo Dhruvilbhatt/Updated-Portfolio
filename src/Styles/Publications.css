@@ -1,0 +1,101 @@
+.publications-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.publication-wrapper {
+    /* margin-inline: auto; */
+    background-color: #23252f;
+    box-shadow: 0 4px 8px 0 rgb(255, 0, 0);
+    backdrop-filter: blur(20px);
+    border-radius: 4px;
+    width: 60vw;
+    /* width: 60vw; */
+    margin-bottom: 40px;
+    padding: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+    .publication-wrapper{
+        /* position: absolute; */
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* margin-left: 20px; */
+        /* margin-right: 20px; */
+    }
+
+    .margin-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ed-intro{
+        margin-left: 0px !important;
+    }
+}
+
+.publication-header-wrapper {
+    color: rgb(56 189 248);
+    /* lex flex-col space-y-1 text-sky-400 */
+}
+
+.paper-title {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.paper-skills {
+    font-size: large;
+    font-style: italic;
+    /* font-weight: 50; */
+    margin-bottom: 20px;
+}
+
+.paper-author-list {
+    font-size: large;
+    /* font-weight: 50; */
+    line-height: 1.5em;
+    /* letter-spacing: 1.5px; */
+}
+
+.paper-link {
+    color: yellow;
+    /* text-yellow-300 duration-[200ms] underline */
+}
+
+.pb-intro-wrapper {
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.education {
+    display: flex;
+    /* margin-left: 20px; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ed-intro {
+    display: flex;
+    margin-left: 20px;
+    font-size: 40px;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.ed-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #8ba2a3;
+}

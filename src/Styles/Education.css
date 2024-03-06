@@ -1,0 +1,65 @@
+.education-wrapper {
+    margin: 40px;
+    margin-bottom: 30px;
+}
+
+.education {
+    display: flex;
+    /* margin-left: 20px; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .education {
+        flex-direction: column;
+        /* width:100%; */
+        align-items: center;
+        justify-content: center;
+        min-height: 90vh;
+        /* z-index: 10000; */
+    }
+
+    .ed-intro {
+        justify-content: center;
+    }
+
+    .ed-line{
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.ed-intro {
+    display: flex;
+    margin-left: 20px;
+    font-size: 40px;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.ed-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #dbeaea;
+}
+
+.school-logo-container {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.school-logo {
+    /* margin-right: 20px; */
+    padding: 0;
+}

@@ -1,0 +1,125 @@
+.teaching-container {
+    margin: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.teaching-center-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teaching-image {
+    border-radius: 50%
+}
+
+.teaching-wrapper {
+    /* margin-inline: auto; */
+    background-color: #23252f;
+    box-shadow: 0 4px 8px 0 yellow;
+    backdrop-filter: blur(20px);
+    border-radius: 4px;
+    width: 50vw;
+    /* width: 60vw; */
+    /* margin-bottom: 40px; */
+    padding: 16px;
+    margin-left: 20px;
+}
+
+.teaching-header-wrapper {
+    color: rgb(56 189 248);
+    /* lex flex-col space-y-1 text-sky-400 */
+}
+
+.paper-title {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.paper-skills {
+    font-size: large;
+    font-style: italic;
+    /* font-weight: 50; */
+    margin-bottom: 20px;
+}
+
+.teach-time{
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.paper-author-list {
+    font-size: large;
+    /* font-weight: 50; */
+    line-height: 1.5em;
+    /* letter-spacing: 1.5px; */
+}
+
+.paper-link {
+    color: yellow;
+    /* text-yellow-300 duration-[200ms] underline */
+}
+
+.location{
+    /* font-size: 0.8em; */
+    font-weight: 100;
+}
+
+.pb-intro-wrapper {
+    margin: 40px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.education {
+    display: flex;
+    /* margin-left: 20px; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ed-intro {
+    display: flex;
+    margin-left: 20px;
+    font-size: 40px;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+.ed-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #ffffffc1;
+}
+
+@media screen and (max-width: 1100px) {
+    .teaching-container{
+        flex-direction: column;
+    }
+
+    .teaching-image{
+        margin-bottom: 20px;
+        width: 180px;
+    }
+
+    .teaching-center-wrapper
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .teaching-wrapper
+    {
+        margin: 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,120 @@
+.modal-test {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(253, 137, 118, 0.3); */
+    backdrop-filter: blur(16px);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* transition: all 0.5s ease-out; */
+}
+
+.modal-close-div {
+    position: fixed;
+    bottom: 40px;
+    /* right: 10px; */
+    background: #fd8976;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal-header-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 20px;
+    width: calc(100% - 32px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    font-size: 20px;
+}
+
+.modal-header-container div:nth-child(1) {
+    color: #fd8976;
+    font-size: 25px;
+}
+
+.modal-location-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 14px;
+    width: calc(100% - 14px);
+    margin-bottom: 10px;
+}
+
+.modal-location-container svg:nth-child(1){
+    margin-right: 10px;
+}
+
+.modal-location-container div:nth-child(2){
+    color: rgb(0, 17, 128);
+}
+.modal-role-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 14px;
+    width: calc(100% - 14px);
+}
+
+.modal-role-container svg:nth-child(1){
+    margin-right: 10px;
+}
+
+.modal-role-container div:nth-child(2){
+    color: rgba(201, 149, 6, 0.811);
+}
+.modal-test-content {
+    max-height: 60%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    overflow: auto;
+    /* position: fixed */
+}
+
+/* .modal-test-content ul{
+    margin-top: auto;
+    margin-bottom: 20px;
+} */
+
+.modal-test-content ul li {
+    margin-bottom: 20px;
+}
+/* 
+.modal-test-content ul {
+    padding-right: 40px;
+} */
+
+.modal-test-content ul li:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+
+.modal-div {
+    background-color: transparent;
+    color: black;
+    /* text-align: center; */
+    /* overflow: auto; */
+}

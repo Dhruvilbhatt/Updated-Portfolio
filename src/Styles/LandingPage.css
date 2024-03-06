@@ -1,0 +1,503 @@
+.modal {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    height: 100vh;
+    width: 100%;
+    border-radius: 5px;
+    opacity: 0.5;
+    border-radius: 10px;
+    /* z-index: 1; */
+}
+
+.modal img {
+    width: 100%;
+    height: 100%;
+}
+
+.landing {
+    display: flex;
+    /* background-color: black; */
+    /* height: 100%; */
+    min-height: 90vh;
+    align-items: center;
+    position: relative;
+}
+
+.landing-left {
+    position: relative;
+    flex: 1.5;
+    height: 100%;
+    width: 100%;
+}
+
+.landing-right {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .landing {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .landing-left {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .hero-image-wrapper {
+        /* height: 40vw !important;
+        width: 40vw !important; */
+        flex: 1;
+    }
+
+    .landing-right img {
+        height: 40vh !important;
+        width: 40vh !important;
+    }
+}
+
+.landing-right img {
+    /* width: 400px; */
+    object-fit: cover;
+    /* width: 100%; */
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
+}
+
+.about-me {
+    height: 100%;
+    /* padding-top: 50px; */
+    /* padding-left: 100px;
+    padding-right: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    z-index: 10;
+    position: relative;
+    animation: display 2s ease-in forwards;
+    opacity: 0;
+}
+
+@keyframes display {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Anton|Roboto'); */
+
+.word {
+    /* font-family: 'Anton', sans-serif; */
+    padding-top: 4px;
+    perspective: 1000px;
+}
+
+.container1 {
+    /* background-color: white; */
+    position: relative;
+    margin-top: 50px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    /* box-shadow: inset 0px 0px 40px 40px rgba(80, 80, 80, 0.6); change to alter the effect */
+    border-left: 8px solid red;
+    border-radius: 3px;
+    filter: blur(1px);
+    animation: show-up 2s ease-in-out forwards;
+    /* z-index: 10; */
+}
+
+@keyframes show-up {
+    0% {
+        height: 0;
+    }
+
+    50% {
+        left: 0;
+        height: 100%;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        left: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+.word span {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 50px;
+    user-select: none;
+    line-height: .8;
+}
+
+/* .word span:nth-child(1).active {
+    animation: balance1 1.5s ease-in;
+    transform-origin: bottom left;
+}
+
+@keyframes balance1 {
+    10% {
+        transform: rotate(0deg) translate(-20px, -10px);
+    }
+
+    60% {
+        transform: rotate(-45deg) translate(-20px, -10px);
+    }
+} */
+
+.space {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.4;
+    }
+
+    5% {
+        opacity: 0.5;
+    }
+
+    10% {
+        opacity: 0.6;
+    }
+
+    15% {
+        opacity: 0.85;
+    }
+
+    25% {
+        opacity: 0.5;
+        color: #fd8976;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0.1;
+    }
+
+    40% {
+        opacity: 0.25;
+    }
+
+    45% {
+        opacity: 0.5;
+        color: rgb(114, 242, 114);
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.85;
+    }
+
+    80% {
+        opacity: 0.4;
+    }
+
+    90% {
+        opacity: 0.5;
+        color: rgb(246, 174, 246);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.flickering-text.active {
+    animation: flicker 2s linear reverse infinite;
+}
+
+.container {
+    width: 100%;
+    height: 10vh;
+    /* background: #232323; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .box .title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.container .box .title .block {
+    width: 0%;
+    height: inherit;
+    background: #ffb510;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    display: flex;
+}
+
+.container .box .title h1 {
+    /* font-family: "Poppins"; */
+    color: #fff;
+    font-size: 40px;
+    -webkit-animation: mainFadeIn 2s forwards;
+    -o-animation: mainFadeIn 2s forwards;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.container .box .title h1 span {
+    width: 0px;
+    height: 0px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffb510;
+    -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    margin-left: 5px;
+    margin-top: -10px;
+    position: absolute;
+    bottom: 13px;
+    right: -20px;
+}
+
+.container .box .role {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    /* margin-top: -10px; */
+}
+
+.container .box .role .block {
+    width: 0%;
+    height: inherit;
+    background: #e91e63;
+    position: absolute;
+    animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 2s;
+    display: flex;
+}
+
+.container .box .role p {
+    animation: secFadeIn 2s forwards;
+    animation-delay: 3.2s;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 400;
+    /* font-family: "Lato"; */
+    color: #ffffff;
+    /* font-size: 12px; */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes secBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+
+    50% {
+        width: 100%;
+        left: 0;
+    }
+
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        width: 0px;
+        height: 0px;
+        background: #e9d856;
+        border: 0px solid #ddd;
+        opacity: 0;
+    }
+
+    50% {
+        width: 10px;
+        height: 10px;
+        background: #e9d856;
+        opacity: 1;
+        bottom: 45px;
+    }
+
+    65% {
+        width: 7px;
+        height: 7px;
+        bottom: 0px;
+        width: 15px;
+    }
+
+    80% {
+        width: 10px;
+        height: 10px;
+        bottom: 20px;
+    }
+
+    100% {
+        width: 10px;
+        height: 10px;
+        background: #e9d856;
+        border: 0px solid #222;
+        bottom: 13px;
+    }
+}
+
+@keyframes secFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+footer {
+    width: 350px;
+    height: 80px;
+    background: #ffb510;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: top 0.8s forwards;
+    animation-delay: 4s;
+}
+
+footer span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #232323;
+    font-family: "Poppins";
+}
+
+footer span i {
+    margin-right: 25px;
+    font-size: 22px;
+    color: #232323;
+    animation: icon 2s forwards;
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+@keyframes top {
+    0% {
+        opacity: 0;
+        bottom: -80px;
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+
+@keyframes icon {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3) rotate(-2deg);
+    }
+
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}

@@ -1,0 +1,112 @@
+:root {
+    --hex-height: 200px;
+    --hex-width: 200px;
+    --row-width: calc(var(--hex-width) * 3);
+    --row-height: var(--hex-height);
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    :root {
+        --hex-height: 130px;
+        --hex-width: 130px;
+        --row-width: calc(var(--hex-width) * 3);
+        --row-height: var(--hex-height);
+    }
+
+    .hexagon-updated-tiles {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    :root {
+        --hex-height: 100px;
+        --hex-width: 100px;
+        --row-width: calc(var(--hex-width) * 3);
+        --row-height: var(--hex-height);
+    }
+
+    .hexagon-updated-tiles {
+        font-size: 14px;
+    }
+}
+
+.wrapper {
+    /* height: 100vh; */
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .wrapper {
+        margin-top: 20px;
+    }
+}
+
+.hexagon-updated-tiles {
+    height: var(--hex-height);
+    width: var(--hex-width);
+    /* border: 2px dashed burlywood; */
+    background: url('../assets/hex-figma.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    pointer-events: all;
+    cursor: pointer;
+    transition: background-image 0.12s ease-in, scale 0.3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: bisque;
+}
+
+.hexagon-updated-tiles:hover {
+    background: url('../assets/hex-figma-hover.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top-row {
+    height: var(--row-height);
+    width: var(--row-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.first-middle-row {
+    height: var(--row-height);
+    width: calc(var(--row-width) - var(--hex-width)/4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: calc(-1 * var(--hex-height) / 2);
+    pointer-events: none;
+}
+
+.middle-row {
+    height: var(--row-height);
+    width: calc(var(--row-width) - var(--hex-width)/4);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-row {
+    height: var(--row-height);
+    width: var(--row-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: calc(-1 * var(--hex-height) / 2);
+    pointer-events: none;
+}

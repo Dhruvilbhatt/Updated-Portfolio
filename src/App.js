@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import './Styles/App.css';
+import Education from './components/Education';
+import LandingPage from './components/LandingPage';
+import Navbar from './components/Navbar';
+import { useEffect, useState } from 'react';
+import Tiles from './components/Tiles';
+import GM from './components/GM';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Publications from './components/Publications';
+import Teachings from './components/Teachings';
+import Footer from './components/Footer';
+import Modal from './components/Modal_Synaptics';
+import UpdatedTiles from './components/UpdatedTiles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Footer />
+      <Navbar />
+      <LandingPage />
+      {/* <Tiles /> */}
+      <UpdatedTiles />
+      <GM />
+      <Education />
+      <Experience />
+      <Projects />
+      <Publications />
+      <Teachings />
     </div>
   );
 }
