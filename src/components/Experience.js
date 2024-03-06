@@ -11,6 +11,8 @@ import Modal_HuddleUp from './Modal_HuddleUp';
 import Modal_DA from './Modal_DA';
 import Modal_IIT from './Modal_IIT';
 import Modal_IPR from './Modal_IPR';
+import $ from 'jquery';
+import { Power3 } from 'gsap'
 
 function Experience() {
     const [modalSyn, setModalSyn] = useState(false);
@@ -51,7 +53,7 @@ function Experience() {
                 opacity: 0
             });
 
-            TweenMax.to(newSlideImage, 1, {
+            window.TweenMax.to(newSlideImage, 1, {
                 alpha: 1,
                 onComplete: function () {
                     newSlide.addClass('is-active').removeClass('is-new');
@@ -115,24 +117,24 @@ function Experience() {
                 left: 0
             });
 
-            TweenMax.set(newSlideElements, { y: 20, force3D: true });
-            TweenMax.to(activeSlideImage, 1, {
+            window.TweenMax.set(newSlideElements, { y: 20, force3D: true });
+            window.TweenMax.to(activeSlideImage, 1, {
                 left: activeSlideImageLeft,
                 ease: Power3.easeInOut
             });
 
-            TweenMax.to(newSlide, 1, {
+            window.TweenMax.to(newSlide, 1, {
                 width: slideshow.width(),
                 ease: Power3.easeInOut
             });
 
-            TweenMax.to(newSlideImage, 1, {
+            window.TweenMax.to(newSlideImage, 1, {
                 right: newSlideImageToRight,
                 left: newSlideImageToLeft,
                 ease: Power3.easeInOut
             });
 
-            TweenMax.staggerFromTo(newSlideElements, 0.8, { alpha: 0, y: 60 }, { alpha: 1, y: 0, ease: Power3.easeOut, force3D: true, delay: 0.6 }, 0.1, function () {
+            window.TweenMax.staggerFromTo(newSlideElements, 0.8, { alpha: 0, y: 60 }, { alpha: 1, y: 0, ease: Power3.easeOut, force3D: true, delay: 0.6 }, 0.1, function () {
                 newSlide.addClass('is-active').removeClass('is-new');
                 activeSlide.removeClass('is-active');
                 newSlide.css({
@@ -194,9 +196,9 @@ function Experience() {
 
     function homeSlideshowParallax() {
         var scrollTop = $(window).scrollTop();
-        if (scrollTop > windowHeight) return;
+        if (scrollTop > window.innerHeight) return;
         var inner = slideshow.find('.slideshow-inner');
-        var newHeight = windowHeight - (scrollTop / 2);
+        var newHeight = window.innerHeight - (scrollTop / 2);
         var newTop = scrollTop * 0.8;
 
         inner.css({
