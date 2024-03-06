@@ -36,7 +36,7 @@ function LandingPage() {
                 <div class="container1">
                     <div class="container">
                         <div class="box">
-                            <div class="title">
+                            <div class="title" style={{marginBottom: '5px', flexWrap: 'nowrap'}}>
                                 <span class="block"></span>
                                 <h1>DHRUVIL BHATT<span></span></h1>
                             </div>

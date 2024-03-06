@@ -19,7 +19,7 @@ function Publications() {
           <div className='school-logo-container'>
             <ScienceIcon className='school-logo' fontSize='large' style={{ color: "white" }} />
           </div>
-          <div>
+          <div className='section-title'>
             Publications
           </div>
         </div>

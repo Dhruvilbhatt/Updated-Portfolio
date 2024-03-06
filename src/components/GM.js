@@ -9,7 +9,7 @@ function GM() {
                 <div className='school-logo-container'>
                     <InfoIcon className='school-logo' fontSize='40px' style={{ color: "white" }} />
                 </div>
-                <div>
+                <div className='section-title'>
                     About Me!
                 </div>
             </div>
