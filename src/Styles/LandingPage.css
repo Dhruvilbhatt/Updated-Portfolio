@@ -68,6 +68,7 @@
     .landing-right img {
         height: 40vh !important;
         width: 40vh !important;
+        margin-right: 0px !important;
     }
 }
 
@@ -78,6 +79,7 @@
     height: 50vh;
     width: 50vh;
     border-radius: 50%;
+    margin-right: 20px;
 }
 
 .about-me {
