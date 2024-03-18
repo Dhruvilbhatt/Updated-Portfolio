@@ -290,6 +290,11 @@
     color: #fff;
     font-size: 40px;
     -webkit-animation: mainFadeIn 2s forwards;
+    -webkit-animation-name: mainFadeIn;
+    -webkit-animation-duration: 2s;
+    /* -webkit-animation-iteration-count: 1; */
+    /* -webkit-animation-timing-function: linear; */
+    -webkit-animation-fill-mode: forwards;
     -o-animation: mainFadeIn 2s forwards;
     animation: mainFadeIn 2s forwards;
     animation-delay: 1.6s;
@@ -308,11 +313,16 @@
 .container .box .title h1 span {
     width: 0px;
     height: 0px;
-    -webkit-border-radius: 50%;
+    border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     background: #ffb510;
     -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    -webkit-animation-name: load;
+    -webkit-animation-duration: 0.6s;
+    /* -webkit-animation-iteration-count: 1; */
+    -webkit-animation-timing-function: cubic-bezier(0.74, 0.06, 0.4, 0.92);
+    -webkit-animation-fill-mode: forwards;
     animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
     animation-delay: 2s;
     margin-left: 5px;
