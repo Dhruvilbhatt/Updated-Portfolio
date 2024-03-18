@@ -288,7 +288,7 @@
 .container .box .title h1 {
     /* font-family: "Poppins"; */
     color: #fff;
-    font-size: 40px;
+    font-size: 39px;
     -webkit-animation: mainFadeIn 2s forwards;
     -webkit-animation-name: mainFadeIn;
     -webkit-animation-duration: 2s;
@@ -313,7 +313,7 @@
 .container .box .title h1 span {
     width: 0px;
     height: 0px;
-    border-radius: 50%;
+    -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     background: #ffb510;
