@@ -342,7 +342,7 @@ function Terminal() {
         var pointOneATag = document.createElement("a");
         pointOneATag.setAttribute("target", "_blank");
         pointOneATag.setAttribute('href', "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4163283");
-        pointOneATag.style.color = "yellow";
+        pointOneATag.style.color = "rgb(0, 255, 34)";
         pointOneATag.innerHTML = "(Link to paper)";
         pointOne.appendChild(pointOneATag);
 
@@ -352,7 +352,7 @@ function Terminal() {
         var pointTwoATag = document.createElement("a");
         pointTwoATag.setAttribute("target", "_blank");
         pointTwoATag.setAttribute("href", "https://onlinelibrary.wiley.com/doi/10.1002/cpe.7217");
-        pointTwoATag.style.color = "yellow";
+        pointTwoATag.style.color = "rgb(0, 255, 34)";
         pointTwoATag.innerHTML = "(Link to paper)";
         pointTwo.appendChild(pointTwoATag);
 
@@ -362,7 +362,7 @@ function Terminal() {
         var pointThreeATag = document.createElement("a");
         pointThreeATag.setAttribute("target", "_blank");
         pointThreeATag.setAttribute("href", "https://link.springer.com/chapter/10.1007/978-981-99-3080-7_13");
-        pointThreeATag.style.color = "yellow";
+        pointThreeATag.style.color = "rgb(0, 255, 34)";
         pointThreeATag.innerHTML = "(Link to paper)";
         pointThree.appendChild(pointThreeATag);
 
@@ -598,8 +598,15 @@ function Terminal() {
 
     useEffect(() => {
         setTimeout(() => {
+            var spanDiv = document.getElementById("span-class");
+            spanDiv.setAttribute("contenteditable", "false");
+        }, 0);
+        setTimeout(() => {
             var cursorDiv = document.getElementById("cursor-command-line");
             cursorDiv.style.display = "block";
+            var spanDiv = document.getElementById("span-class");
+            spanDiv.setAttribute("contenteditable", "true");
+            focusInput();
         }, 3000);
     }, [])
 
