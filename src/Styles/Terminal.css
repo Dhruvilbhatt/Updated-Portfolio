@@ -99,12 +99,70 @@
 }
 
 .span-class {
+    color: #f9ff8a;
     min-width: 2px;
     max-width: 100%;
     cursor: none;
     outline: none;
     border: none;
     caret-color: transparent;
+}
+
+.start-terminal-class {
+    -webkit-animation: start 1s step-end;
+    animation: start 1s step-end;
+}
+
+.start-terminal-class>span:nth-child(1) {
+    display: inline-block;
+    -webkit-animation: start 1.33s step-end;
+    animation: start 1.33s step-end;
+}
+
+.start-terminal-class>span:nth-child(2) {
+    display: inline-block;
+    -webkit-animation: start 1.8s step-end;
+    animation: start 1.8s step-end;
+}
+
+.start-terminal-class>span:nth-child(3) {
+    display: inline-block;
+    -webkit-animation: start 2.3s step-end;
+    animation: start 2.3s step-end;
+}
+
+.type-terminal-class {
+    -webkit-animation: start 2.4s step-end;
+    animation: start 2.4s step-end;
+}
+
+
+.prefix-command-line-pre {
+    margin-right: 5px;
+    color: #fa5454;
+    letter-spacing: 0.05em;
+    -webkit-animation: start 3s step-end;
+    animation: start 3s step-end;
+}
+
+@-webkit-keyframes start {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes start {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
 }
 
 .cursor-command-line {
@@ -114,8 +172,16 @@
     height: 20px;
     -webkit-animation: blink 1s step-end infinite;
     animation: blink 1s step-end infinite;
-    /* margin-left: -2px; */
-    /* margin-left: -80px; */
+}
+
+.cursor-command-line-pre {
+    background-color: #606060;
+    vertical-align: top;
+    width: 10px;
+    height: 20px;
+    display: none;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
 }
 
 @-webkit-keyframes blink {
@@ -152,6 +218,8 @@
 
 .prefix-command-line {
     margin-right: 5px;
+    color: #fa5454;
+    letter-spacing: 0.05em;
 }
 
 .help-command-class {

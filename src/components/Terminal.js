@@ -165,9 +165,13 @@ function Terminal() {
         pointThree.style.marginTop = "7px";
         pointThree.innerHTML = "* 2000+ LeetCode contest rating";
 
+        var pointResearch = document.createElement("div");
+        pointResearch.style.marginTop = "7px";
+        pointResearch.innerHTML = "* Reserach experience: ML, AI, HPC and Parallel Computing, Computational Plasma";
+
         var pointFour = document.createElement("div");
         pointFour.style.marginTop = "7px";
-        pointFour.innerHTML = `* Bachelor's degree in Information and Communication Technology with minors in Computational Science `;
+        pointFour.innerHTML = `* Bachelor's degree in Information and Communication Technology with minors in Computational Science from `;
         var pointFourSpan = document.createElement("span");
         pointFourSpan.style.color = "#66C2CD";
         pointFourSpan.innerHTML = "DA-IICT";
@@ -200,6 +204,7 @@ function Terminal() {
         parentDiv.appendChild(pointOne);
         parentDiv.appendChild(pointTwo);
         parentDiv.appendChild(pointThree);
+        parentDiv.appendChild(pointResearch);
         parentDiv.appendChild(pointFour);
         parentDiv.appendChild(pointFive);
         parentDiv.appendChild(pointSix);
@@ -213,33 +218,42 @@ function Terminal() {
 
         var parentDiv = document.createElement("div");
         parentDiv.style.marginTop = "17px";
+        parentDiv.style.marginBottom = "17px";
 
         var pointOne = document.createElement("div");
         pointOne.style.marginTop = "7px";
-        pointOne.innerHTML = `* Bachelor's degree in Information and Communication Technology with minors in Computational Science `;
+        pointOne.innerHTML = `* `;
         var pointOneSpan = document.createElement("span");
         pointOneSpan.style.color = "#66C2CD";
-        pointOneSpan.innerHTML = "DA-IICT";
+        pointOneSpan.innerHTML = "University of California, Irvine (USA) (09/2022 - 12/2023)";
+        var brTag = document.createElement("br");
+        pointOneSpan.appendChild(brTag);
+        pointOneSpan.innerHTML += "&nbsp Master, Computer Science - GPA: 3.95/4";
+        var pointOneUL = document.createElement("ul");
+        var pointOneULLI_1 = document.createElement("li");
+        pointOneULLI_1.innerHTML = "Relevant Coursework: Advanced Programming, Machine Learning, Operating Systems, Algorithm, Parallel and Distributed Computing"
+        pointOneUL.appendChild(pointOneULLI_1);
         pointOne.appendChild(pointOneSpan);
-        pointOne.innerHTML += " (India)";
+        pointOne.appendChild(pointOneUL);
 
         var pointTwo = document.createElement("div");
         pointTwo.style.marginTop = "7px";
-        pointTwo.innerHTML = `* Master's degree in Computer Science from the `;
+        pointTwo.innerHTML = `* `;
         var pointTwoSpan = document.createElement("span");
         pointTwoSpan.style.color = "#66C2CD";
-        pointTwoSpan.innerHTML = "University of California, Irvine";
+        pointTwoSpan.innerHTML = "DA-IICT (India) (08/2018 - 05/2022)";
+        var brTag = document.createElement("br");
+        pointTwoSpan.appendChild(brTag);
+        pointTwoSpan.innerHTML += "&nbsp Bachelor, Computer Science - GPA: 3.8/4";
+        var pointTwoUL = document.createElement("ul");
+        var pointTwoULLI_1 = document.createElement("li");
+        pointTwoULLI_1.innerHTML = "Relevant Coursework: High Performance Computing, Object-Oriented Programming, Computer Architecture, Computer Networks, Database Management, Data Structure, Algorithms, Software Engineering"
+        pointTwoUL.appendChild(pointTwoULLI_1);
         pointTwo.appendChild(pointTwoSpan);
-        pointTwo.innerHTML += " (USA)";
-
-        var pointThree = document.createElement("div");
-        pointThree.style.marginTop = "7px";
-        pointThree.style.marginBottom = "17px";
-        pointThree.innerHTML = "* Relevant Coursework: Advanced Programming, Machine Learning, Operating Systems, Algorithms, Parallel Computing, Computer Networks, Database Management, Data Structures, Object-Oriented Programming, High Performance Computing";
+        pointTwo.appendChild(pointTwoUL);
 
         parentDiv.appendChild(pointOne);
         parentDiv.appendChild(pointTwo);
-        parentDiv.appendChild(pointThree);
 
         terminalParentDiv.appendChild(parentDiv);
     }
@@ -315,31 +329,190 @@ function Terminal() {
         terminalParentDiv.appendChild(parentDiv);
     }
 
+    const publicationsCommand = () => {
+        var terminalParentDiv = document.getElementById("terminal-shell-class");
+
+        var parentDiv = document.createElement("div");
+        parentDiv.style.marginTop = "17px";
+        parentDiv.style.marginBottom = "17px";
+
+        var pointOne = document.createElement("div");
+        pointOne.style.marginTop = "7px";
+        pointOne.innerHTML = `* Understanding and Attaining an Investment Grade Rating in the Age of Explainable AI - `;
+        var pointOneATag = document.createElement("a");
+        pointOneATag.setAttribute("target", "_blank");
+        pointOneATag.setAttribute('href', "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4163283");
+        pointOneATag.style.color = "yellow";
+        pointOneATag.innerHTML = "(Link to paper)";
+        pointOne.appendChild(pointOneATag);
+
+        var pointTwo = document.createElement("div");
+        pointTwo.style.marginTop = "7px";
+        pointTwo.innerHTML = `* Parallel algorithm for synthetic image generation with application to tokamak plasma diagnostics - `;
+        var pointTwoATag = document.createElement("a");
+        pointTwoATag.setAttribute("target", "_blank");
+        pointTwoATag.setAttribute("href", "https://onlinelibrary.wiley.com/doi/10.1002/cpe.7217");
+        pointTwoATag.style.color = "yellow";
+        pointTwoATag.innerHTML = "(Link to paper)";
+        pointTwo.appendChild(pointTwoATag);
+
+        var pointThree = document.createElement("div");
+        pointThree.style.marginTop = "7px";
+        pointThree.innerHTML = `* Computational Modeling Of Noisy Plasma Images Applicable To Tokamak Imaging Diagnostics For Visible And X-Ray Emissions - `;
+        var pointThreeATag = document.createElement("a");
+        pointThreeATag.setAttribute("target", "_blank");
+        pointThreeATag.setAttribute("href", "https://link.springer.com/chapter/10.1007/978-981-99-3080-7_13");
+        pointThreeATag.style.color = "yellow";
+        pointThreeATag.innerHTML = "(Link to paper)";
+        pointThree.appendChild(pointThreeATag);
+
+        parentDiv.appendChild(pointOne);
+        parentDiv.appendChild(pointTwo);
+        parentDiv.appendChild(pointThree);
+
+        terminalParentDiv.appendChild(parentDiv);
+    }
+
+    const projectsCommand = () => {
+        var terminalParentDiv = document.getElementById("terminal-shell-class");
+
+        var parentDiv = document.createElement("div");
+        parentDiv.style.marginTop = "17px";
+        parentDiv.style.marginBottom = "17px";
+
+        var pointOne = document.createElement("div");
+        pointOne.style.marginTop = "7px";
+        pointOne.innerHTML = `* Developed `;
+        var pointOneSpan = document.createElement("span");
+        pointOneSpan.style.color = "#66C2CD";
+        pointOneSpan.innerHTML = "DocLab, an AI-powered document editor";
+        pointOne.appendChild(pointOneSpan);
+        pointOne.innerHTML += " with features like auto text correction, paraphrasing, summarization, and collaboration. Used WebRTC to integrate video calling with low latency and screen-sharing. Deployed Flask-based AI model on AWS EC2 for scalability. Designed RESTful APIs for seamless frontend-backend communication with MongoDB for fast page load times.";
+
+        var pointTwo = document.createElement("div");
+        pointTwo.style.marginTop = "7px";
+        pointTwo.innerHTML = `* Devised a responsive `;
+        var pointTwoSpan = document.createElement("span");
+        pointTwoSpan.style.color = "#66C2CD";
+        pointTwoSpan.innerHTML = "DocLab, an AI-powered document editor";
+        pointTwo.appendChild(pointTwoSpan);
+        pointTwo.innerHTML += " for job postings. Implemented theme toggling and integrated Google API for latest news feature. Utilized MongoDB with Mongoose for CRUD operations and Recoil for state management, enhancing application performance.";
+
+        var pointThree = document.createElement("div");
+        pointThree.style.marginTop = "7px";
+        pointThree.innerHTML = `* Analyzed 25 world cuisines to identify their  `;
+        var pointThreeSpan = document.createElement("span");
+        pointThreeSpan.style.color = "#66C2CD";
+        pointThreeSpan.innerHTML = "unique features and establish interrelatedness between these cuisines";
+        pointThree.appendChild(pointThreeSpan);
+        pointThree.innerHTML += " using the FP-Growth Algorithm. Created three dendrograms with distinct distance metrics to visualize the hierarchical clustering of these cuisines.";
+
+        var pointFour = document.createElement("div");
+        pointFour.style.marginTop = "7px";
+        pointFour.innerHTML = `* Created a `;
+        var pointFourSpan = document.createElement("span");
+        pointFourSpan.style.color = "#66C2CD";
+        pointFourSpan.innerHTML = "live chat web platform synchronized with Google accounts";
+        pointFour.appendChild(pointFourSpan);
+        pointFour.innerHTML += ", facilitating multiple conversations. Employed WebSockets and Node.js for instant communication. Utilized Material UI and React to craft the frontend. Managed user authentication and data storage through MongoDB.";
+
+        parentDiv.appendChild(pointOne);
+        parentDiv.appendChild(pointTwo);
+        parentDiv.appendChild(pointThree);
+        parentDiv.appendChild(pointFour);
+
+        terminalParentDiv.appendChild(parentDiv);
+    }
+
+    const teachingCommand = () => {
+        var terminalParentDiv = document.getElementById("terminal-shell-class");
+
+        var parentDiv = document.createElement("div");
+        parentDiv.style.marginTop = "17px";
+        parentDiv.style.marginBottom = "17px";
+
+        var pointOne = document.createElement("div");
+        pointOne.style.marginTop = "7px";
+        pointOne.innerHTML = `* `;
+        var pointOneSpan = document.createElement("span");
+        pointOneSpan.style.color = "#66C2CD";
+        pointOneSpan.innerHTML = "University of California, Irvine (USA) (09/2023 - 12/2023)";
+        var pointOneUL = document.createElement("ul");
+        var pointOneULLI_1 = document.createElement("li");
+        pointOneULLI_1.innerHTML = "Teaching Assistant for MSWE (Master of Software Engineering) 245P (GUI Programming), and MSWE 250P (Web Programming)."
+        var pointOneULLI_2 = document.createElement("li");
+        pointOneULLI_2.innerHTML = "MSWE 245P explores interactive software with graphical user interfaces, covering GUI programming libraries/frameworks, layout design, and event-driven programming."
+        var pointOneULLI_3 = document.createElement("li");
+        pointOneULLI_3.innerHTML = "MSWE 245P covers GUI programming libraries, layout design, and event-driven programming for interactive software with graphical user interfaces."
+        pointOneUL.appendChild(pointOneULLI_1);
+        pointOneUL.appendChild(pointOneULLI_2);
+        pointOneUL.appendChild(pointOneULLI_3);
+        pointOne.appendChild(pointOneSpan);
+        pointOne.appendChild(pointOneUL);
+
+        var pointTwo = document.createElement("div");
+        pointTwo.style.marginTop = "7px";
+        pointTwo.innerHTML = `* `;
+        var pointTwoSpan = document.createElement("span");
+        pointTwoSpan.style.color = "#66C2CD";
+        pointTwoSpan.innerHTML = "University of California, Irvine (USA) (04/2023 - 06/2023)";
+        var pointTwoUL = document.createElement("ul");
+        var pointTwoULLI_1 = document.createElement("li");
+        pointTwoULLI_1.innerHTML = "Teaching Assistant for MSWE (Master of Software Engineering) 245P (GUI Programming), and MSWE 250P (Web Programming)."
+        var pointTwoULLI_2 = document.createElement("li");
+        pointTwoULLI_2.innerHTML = "Introductory statistical techniques for collecting and analyzing experimental and observational data in health sciences and biology. Topics include data exploration, probability, sampling distributions, statistical inference, linear regression, and analysis of variance."
+        var pointTwoULLI_3 = document.createElement("li");
+        pointTwoULLI_3.innerHTML = "MSWE 245P covers GUI programming libraries, layout design, and event-driven programming for interactive software with graphical user interfaces."
+        pointTwoUL.appendChild(pointTwoULLI_1);
+        pointTwoUL.appendChild(pointTwoULLI_2);
+        pointTwo.appendChild(pointTwoSpan);
+        pointTwo.appendChild(pointTwoUL);
+
+        var pointThree = document.createElement("div");
+        pointThree.style.marginTop = "7px";
+        pointThree.innerHTML = `* `;
+        var pointThreeSpan = document.createElement("span");
+        pointThreeSpan.style.color = "#66C2CD";
+        pointThreeSpan.innerHTML = "DA-IICT (India) (08/2021 - 12/2021)";
+        var pointThreeUL = document.createElement("ul");
+        var pointThreeULLI_1 = document.createElement("li");
+        pointThreeULLI_1.innerHTML = "Teaching Assistant for Computational Finance course, creating lab assignments and coding contests for MSc Data Science students at DA-IICT."
+        pointThreeUL.appendChild(pointThreeULLI_1);
+        pointThree.appendChild(pointThreeSpan);
+        pointThree.appendChild(pointThreeUL);
+
+        parentDiv.appendChild(pointOne);
+        parentDiv.appendChild(pointTwo);
+        parentDiv.appendChild(pointThree);
+
+        terminalParentDiv.appendChild(parentDiv);
+    }
+
     // @ about div
     // --------------------------------------------------------------------------------------------------
     // <div>
     //     <div style={{ marginTop: "7px" }}>
-    //         * <span style={{ color: "#66C2CD" }}>QBurst (Remote, USA)</span> - Software Engineer Intern
+    //         * <span style={{ color: "#66C2CD" }}>University of California, Irvine (USA) (09/2023 - 12/2023)</span>
+    //         <ul>
+    //             <li>Teaching Assistant for MSWE (Master of Software Engineering) 245P (GUI Programming), and MSWE 250P (Web Programming).</li>
+    //             <li>MSWE 245P explores interactive software with graphical user interfaces, covering GUI programming libraries/frameworks, layout design, and event-driven programming.</li>
+    //             <li>MSWE 245P covers GUI programming libraries, layout design, and event-driven programming for interactive software with graphical user interfaces.</li>
+    //         </ul>
     //     </div>
     //     <div style={{ marginTop: "7px" }}>
-    //         * <span style={{ color: "#66C2CD" }}>Synaptics Incorporated (Irvine, USA)</span> - Audio Software Engineer Intern
+    //         * <span style={{ color: "#66C2CD" }}>University of California, Irvine (USA) (04/2023 - 06/2023)</span>
+    //         <ul>
+    //             <li>Teaching Assistant for the STATS 8 course (Introduction to Biological Statistics).</li>
+    //             <li>Introductory statistical techniques for collecting and analyzing experimental and observational data in health sciences and biology. Topics include data exploration, probability, sampling distributions, statistical inference, linear regression, and analysis of variance.</li>
+    //         </ul>
     //     </div>
     //     <div style={{ marginTop: "7px" }}>
-    //         * <span style={{ color: "#66C2CD" }}>HuddleUp (New York, USA)</span> - Software Engineer Intern
-    //     </div>
-    //     <div style={{ marginTop: "7px" }}>
-    //         * <span style={{ color: "#66C2CD" }}>DA-IICT Research Lab (Gandhinagar, India)</span> - Computational Finance Researcher
-
-    //     </div>
-    //     <div style={{ marginTop: "7px" }}>
-    //         * <span style={{ color: "#66C2CD" }}>Institute for Plasma Research (Ahmedabad, India)</span> - High Performance and Parallel Computing Researcher
-
-    //     </div>
-    //     <div style={{ marginTop: "7px" }}>
-    //         * <span style={{ color: "#66C2CD" }}>Indian Institute of Technology (IIT) – Bombay (Mumbai, India)</span> - Software Engineer Intern
+    //         * <span style={{ color: "#66C2CD" }}>DA-IICT (India) (08/2021 - 12/2021)</span>
+    //         <ul>
+    //             <li>Teaching Assistant for Computational Finance course, creating lab assignments and coding contests for MSc Data Science students at DA-IICT.</li>
+    //         </ul>
     //     </div>
     // </div>
-
 
     const handleEnter = (event) => {
         if (event.keyCode == 13 || event.which == 13) {
@@ -379,6 +552,21 @@ function Terminal() {
                         experienceCommand();
                         break;
 
+                    case "publications":
+                        removeCursor(prevSpanDiv);
+                        publicationsCommand();
+                        break;
+
+                    case "projects":
+                        removeCursor(prevSpanDiv);
+                        projectsCommand();
+                        break;
+
+                    case "teaching":
+                        removeCursor(prevSpanDiv);
+                        teachingCommand();
+                        break;
+
                     default:
                         removeCursor(prevSpanDiv);
                         invalidCommand();
@@ -388,7 +576,7 @@ function Terminal() {
             inputDiv.classList.add("input-command");
             var prefixCmdDiv = document.createElement("div");
             prefixCmdDiv.classList.add("prefix-command-line");
-            prefixCmdDiv.innerHTML = "dhruvil@Dhruvils-Mac ~ % ";
+            prefixCmdDiv.innerHTML = "dhruvil@Dhruvil's-Mac ~ % ";
             var spanDiv = document.createElement("span");
             spanDiv.addEventListener("keyup", handleEnter);
             spanDiv.setAttribute("contenteditable", "true");
@@ -407,6 +595,13 @@ function Terminal() {
             focusInput();
         }
     };
+
+    useEffect(() => {
+        setTimeout(() => {
+            var cursorDiv = document.getElementById("cursor-command-line");
+            cursorDiv.style.display = "block";
+        }, 3000);
+    }, [])
 
     return (
         <div className="terminal-base-class" onClick={focusInput}>
@@ -434,14 +629,14 @@ function Terminal() {
                 </div>
             </div>
             <div className="terminal-shell-class" id="terminal-shell-class">
-                <div>Welcome</div>
-                <div>Starting the server ...</div>
-                <div style={{ color: "#66C2CD" }}>
+                <div className="welcome-terminal-class">Welcome</div>
+                <div className="start-terminal-class">Starting the server <span>.</span><span>.</span><span>.</span></div>
+                <div className="type-terminal-class" style={{ color: "#66C2CD" }}>
                     # Type 'help' to list all commands
                 </div>
                 <div className="input-command" id="input-command">
-                    <div className="prefix-command-line" style={{ marginRight: "5px" }}>
-                        dhruvil@Dhruvils-Mac ~ %{" "}
+                    <div className="prefix-command-line-pre">
+                        dhruvil@Dhruvil's-Mac ~ %{" "}
                     </div>
                     <span
                         onKeyUp={handleEnter}
@@ -452,30 +647,8 @@ function Terminal() {
                     <div
                         onClick={focusInput}
                         id="cursor-command-line"
-                        className="cursor-command-line"
+                        className="cursor-command-line-pre"
                     ></div>
-                </div>
-                <div>
-                    <div style={{ marginTop: "7px" }}>
-                        * <span style={{ color: "#66C2CD" }}>QBurst (Remote, USA)</span> - Software Engineer Intern
-                    </div>
-                    <div style={{ marginTop: "7px" }}>
-                        * <span style={{ color: "#66C2CD" }}>Synaptics Incorporated (Irvine, USA)</span> - Audio Software Engineer Intern
-                    </div>
-                    <div style={{ marginTop: "7px" }}>
-                        * <span style={{ color: "#66C2CD" }}>HuddleUp (New York, USA)</span> - Software Engineer Intern
-                    </div>
-                    <div style={{ marginTop: "7px" }}>
-                        * <span style={{ color: "#66C2CD" }}>DA-IICT Research Lab (Gandhinagar, India)</span> - Computational Finance Researcher
-
-                    </div>
-                    <div style={{ marginTop: "7px" }}>
-                        * <span style={{ color: "#66C2CD" }}>Institute for Plasma Research (Ahmedabad, India)</span> - High Performance and Parallel Computing Researcher
-
-                    </div>
-                    <div style={{ marginTop: "7px" }}>
-                        * <span style={{ color: "#66C2CD" }}>Indian Institute of Technology (IIT) – Bombay (Mumbai, India)</span> - Software Engineer Intern
-                    </div>
                 </div>
             </div>
         </div>
