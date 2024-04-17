@@ -61,6 +61,7 @@
 .terminal-shell-class {
     padding-top: 10px;
     padding-left: 10px;
+    padding-right: 10px;
     max-height: 92%;
     font-size: 14px;
     font-family: 'Fira Code', monospace;
@@ -170,7 +171,7 @@
 
 .single-command-desc {
     position: absolute;
-    right: 15%;
+    right: 0%;
 }
 
 .single-command-usage {
