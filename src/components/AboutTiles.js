@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Styles/About_Tiles.css";
 import LC from "../assets/LC_cnt.png";
 import MERN from "../assets/MERN.png";
 import AWS from "../assets/AWS.png";
 import Next from "../assets/Next.png";
 import tech from "../assets/teck.png";
+import CloseIcon from "@mui/icons-material/Close";
 
 function AboutTiles({ setButtonVisible }) {
+  useEffect(() => {
+    setTimeout(() => {
+      var iconDiv = document.getElementById("red-icon-tiles");
+      iconDiv.style.display = "flex";
+    }, 2000);
+  }, []);
   return (
     <>
       <div className="about-tiles-wrapper">
+        <div
+          className="red-icon-tiles"
+          id="red-icon-tiles"
+          onClick={() => setButtonVisible(true)}
+        >
+          <CloseIcon fontSize="small" sx={{ color: "black" }} />
+        </div>
         <ul className="tiles-ul" id="list">
           <li class="leaf">Software Engineer</li>
           <li class="leaf">
@@ -94,7 +108,6 @@ function AboutTiles({ setButtonVisible }) {
           {/* <li class="leaf">I'm list 9</li> */}
         </ul>
       </div>
-      <div onClick={() => setButtonVisible(true)}>Close</div>
     </>
   );
 }

@@ -111,6 +111,8 @@
     outline: none;
     border: none;
     caret-color: transparent;
+
+    overflow: auto;
 }
 
 .start-terminal-class {

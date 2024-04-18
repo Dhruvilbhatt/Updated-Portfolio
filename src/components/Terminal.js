@@ -170,7 +170,7 @@ function Terminal({ setButtonVisible }) {
     var pointResearch = document.createElement("div");
     pointResearch.style.marginTop = "7px";
     pointResearch.innerHTML =
-      "* Reserach experience: ML, AI, HPC and Parallel Computing, Computational Plasma";
+      "* Reserach experience: ML, AI, HPC and Parallel Computing, Computational Plasma, Computational Finance";
 
     var pointFour = document.createElement("div");
     pointFour.style.marginTop = "7px";
@@ -647,10 +647,13 @@ function Terminal({ setButtonVisible }) {
       terminalBaseDiv.style.cursor = "default";
       var redIcon = document.getElementById("red-icon");
       redIcon.style.pointerEvents = "all";
+      redIcon.style.cursor = "pointer";
       var yellowIcon = document.getElementById("yellow-icon");
       yellowIcon.style.pointerEvents = "all";
+      yellowIcon.style.cursor = "pointer";
       var greenIcon = document.getElementById("green-icon");
       greenIcon.style.pointerEvents = "all";
+      greenIcon.style.cursor = "pointer";
     }, 3000);
   }, []);
 

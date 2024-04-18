@@ -38,8 +38,12 @@ function LandingPage() {
         <div className="about-me">
           {buttonVisible ? (
             <>
-              <button onClick={uiClick}>Try UI!</button>
-              <button onClick={terminalClick}>For terminal geeks!</button>
+              <div onClick={uiClick} className="custom-button-change">
+                Try UI!
+              </div>
+              <div onClick={terminalClick} className="custom-button-change">
+                for terminal freaks!
+              </div>
             </>
           ) : terminalVisible ? (
             <Terminal setButtonVisible={setButtonVisible} />
