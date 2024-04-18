@@ -5,6 +5,7 @@
     border-radius: 8px;
     border: 1px solid gray;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: wait;
 }
 
 .terminal-header-class {
@@ -29,6 +30,7 @@
     width: 12px;
     border-radius: 50%;
     margin-right: 8px;
+    pointer-events: none;
 }
 
 .yellow-icon {
@@ -37,6 +39,7 @@
     width: 12px;
     border-radius: 50%;
     margin-right: 8px;
+    pointer-events: none;
 }
 
 .green-icon {
@@ -45,6 +48,7 @@
     width: 12px;
     border-radius: 50%;
     margin-right: 8px;
+    pointer-events: none;
 }
 
 .terminal-title {
@@ -62,6 +66,7 @@
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    /* min-height: 88%; */
     max-height: 92%;
     font-size: 14px;
     font-family: 'Fira Code', monospace;
@@ -246,4 +251,8 @@
     display: flex;
     margin-top: 17px;
     margin-bottom: 17px;
+}
+
+.dis {
+    pointer-events: none;
 }

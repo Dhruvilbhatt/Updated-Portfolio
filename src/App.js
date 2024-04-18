@@ -19,7 +19,6 @@ function App() {
       <Footer />
       <Navbar />
       <LandingPage />
-      {/* <Tiles /> */}
       <UpdatedTiles />
       <GM />
       <Education />
