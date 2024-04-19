@@ -1,0 +1,304 @@
+.terminal-base-class {
+    background-color: #282A35;
+    width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: wait;
+    z-index: 10000;
+    pointer-events: all;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .terminal-base-class {
+        width: 350px;
+        height: 250px;
+    }
+
+    .terminal-shell-class {
+        font-size: 10px !important;
+        padding-bottom: 5px;
+    }
+
+    .cursor-command-line {
+        width: 8px !important;
+        height: 15px !important;
+    }
+
+    .cursor-command-line-pre {
+        width: 8px !important;
+        height: 15px !important;
+    }
+
+    .prefix-command-line {
+        min-width: 162.5px !important;
+    }
+
+    .prefix-command-line-pre {
+        min-width: 162.5px !important;
+    }
+}
+
+.terminal-header-class {
+    background-color: #424040;
+    width: calc(100% - 20px);
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.terminal-icons {
+    display: flex;
+}
+
+.red-icon {
+    background-color: #F5544D;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    pointer-events: none;
+}
+
+.yellow-icon {
+    background-color: #FABD2F;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    pointer-events: none;
+}
+
+.green-icon {
+    background-color: #47D043;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    pointer-events: none;
+}
+
+.terminal-title {
+    position: absolute;
+    display: flex;
+    left: calc(50% - 61px);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    /* right: 50%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.terminal-shell-class {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* min-height: 88%; */
+    max-height: calc(100% - 30px);
+    font-size: 14px;
+    font-family: 'Fira Code', monospace;
+    overflow: scroll;
+}
+
+.terminal-shell-class>div {
+    margin-bottom: 4px;
+}
+
+.terminal-shell-class>div:last-child {
+    margin-bottom: 0px;
+}
+
+.input-command {
+    display: flex;
+    line-height: 18.2px;
+    /* height: 18.2px; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+}
+
+.user-input-class {
+    /* display: flex; */
+    /* min-width: 0px; */
+    display: inline-block;
+    min-width: 20px;
+    max-width: 300px;
+    margin-left: 7px;
+    /* overflow: hidden; */
+    /* flex: 1; */
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Fira Code', monospace;
+    color: white;
+}
+
+.span-class {
+    white-space: nowrap;
+    color: yellow;
+    min-width: 2px;
+    max-width: 100%;
+    cursor: none;
+    outline: none;
+    border: none;
+    caret-color: transparent;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.start-terminal-class {
+    -webkit-animation: start 1s step-end;
+    animation: start 1s step-end;
+}
+
+.start-terminal-class>span:nth-child(1) {
+    display: inline-block;
+    -webkit-animation: start 1.33s step-end;
+    animation: start 1.33s step-end;
+}
+
+.start-terminal-class>span:nth-child(2) {
+    display: inline-block;
+    -webkit-animation: start 1.8s step-end;
+    animation: start 1.8s step-end;
+}
+
+.start-terminal-class>span:nth-child(3) {
+    display: inline-block;
+    -webkit-animation: start 2.3s step-end;
+    animation: start 2.3s step-end;
+}
+
+.type-terminal-class {
+    -webkit-animation: start 2.4s step-end;
+    animation: start 2.4s step-end;
+}
+
+
+.prefix-command-line-pre {
+    min-width: 227.5px;
+    margin-right: 5px;
+    color: #fa5454;
+    letter-spacing: 0.05em;
+    -webkit-animation: start 3s step-end;
+    animation: start 3s step-end;
+}
+
+@-webkit-keyframes start {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes start {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.cursor-command-line {
+    background-color: #606060;
+    vertical-align: top;
+    width: 10px;
+    height: 20px;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+.cursor-command-line-pre {
+    background-color: #606060;
+    vertical-align: top;
+    width: 10px;
+    height: 20px;
+    display: none;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.ls-command {
+    display: flex !important;
+}
+
+.prefix-command-line {
+    white-space: nowrap;
+    min-width: 227.5px;
+    max-height: 18.2px;
+    margin-right: 5px;
+    color: #fa5454;
+    letter-spacing: 0.05em;
+}
+
+.help-command-class {
+    position: relative;
+    margin-top: 17px;
+    /* margin-right: 40px; */
+}
+
+.single-command {
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-command-text {
+    display: flex;
+}
+
+.single-command-desc {
+    position: absolute;
+    right: 0%;
+}
+
+.single-command-usage {
+    display: flex;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.dis {
+    pointer-events: none;
+}

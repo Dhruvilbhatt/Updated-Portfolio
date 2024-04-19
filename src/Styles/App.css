@@ -12,6 +12,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: larger;
+    background-color: black;
     background-image: linear-gradient(to bottom, #000000, #19010d, #24031a, #2b0429, #2e053c);
     /* background-image: linear-gradient(to bottom, #82439c, #613474, #41254d, #24172a, #030004); */
     /* background-image: linear-gradient(to bottom, #957f9e, #6e5e75, #4a3f4e, #28222a, #030004); */
