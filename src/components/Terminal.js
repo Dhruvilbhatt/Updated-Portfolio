@@ -12,7 +12,7 @@ function Terminal({ setButtonVisible }) {
     }
 
     var prevSpanDiv = document.getElementById("span-class");
-    prevSpanDiv.focus();
+    prevSpanDiv?.focus();
     document.execCommand('selectAll', false, null);
     document.getSelection().collapseToEnd();
   };
@@ -648,25 +648,29 @@ function Terminal({ setButtonVisible }) {
       focusInput();
       var terminalBaseDiv = document.getElementById("terminal-base-class");
       terminalBaseDiv.style.cursor = "default";
+      terminalBaseDiv.addEventListener("click", focusInput);
       var redIcon = document.getElementById("red-icon");
       redIcon.style.pointerEvents = "all";
       redIcon.style.cursor = "pointer";
+      redIcon.addEventListener("click", () => setButtonVisible(true));
       var yellowIcon = document.getElementById("yellow-icon");
       yellowIcon.style.pointerEvents = "all";
       yellowIcon.style.cursor = "pointer";
+      redIcon.addEventListener("click", () => setButtonVisible(true));
       var greenIcon = document.getElementById("green-icon");
       greenIcon.style.pointerEvents = "all";
       greenIcon.style.cursor = "pointer";
+      redIcon.addEventListener("click", () => setButtonVisible(true));
     }, 3000);
   }, []);
 
   return (
-    <div id="terminal-base-class" className="terminal-base-class" onClick={focusInput}>
+    <div id="terminal-base-class" className="terminal-base-class">
       <div className="terminal-header-class">
         <div className="terminal-icons">
-          <div className="red-icon" id="red-icon" onClick={() => setButtonVisible(true)} />
-          <div className="yellow-icon" id="yellow-icon" onClick={() => setButtonVisible(true)} />
-          <div className="green-icon" id="green-icon" onClick={() => setButtonVisible(true)} />
+          <div className="red-icon" id="red-icon" />
+          <div className="yellow-icon" id="yellow-icon" />
+          <div className="green-icon" id="green-icon" />
         </div>
         <div className="terminal-title">
           <img
