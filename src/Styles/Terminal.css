@@ -101,7 +101,7 @@
     padding-left: 10px;
     padding-right: 10px;
     /* min-height: 88%; */
-    max-height: calc(100% - 40px);
+    max-height: calc(100% - 50px);
     font-size: 14px;
     font-family: 'Fira Code', monospace;
     overflow: scroll;
