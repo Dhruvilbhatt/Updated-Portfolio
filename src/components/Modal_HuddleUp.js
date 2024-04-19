@@ -15,7 +15,7 @@ function Modal_HuddleUp({ modal, setModal }) {
                 </div>
                 <div className='modal-location-container'>
                     <TimelineIcon />
-                    <div style={{ color: 'rgb(65 203 0 / 76%)' }}>March 2022 - June 2020</div>
+                    <div style={{ color: 'rgb(65 203 0 / 76%)' }}>March 2022 - June 2022</div>
                 </div>
                 <div className='modal-location-container'>
                     <LocationOnIcon />

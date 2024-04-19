@@ -259,9 +259,9 @@ function Experience() {
 
             <div className='ed-intro'>
                 <div className='school-logo-container'>
-                    <WorkHistoryIcon className='school-logo' fontSize='20px' style={{ color: "white" }} />
+                    <WorkHistoryIcon className='school-logo' fontSize='large' style={{ color: "white" }} />
                 </div>
-                <div>
+                <div className='section-title'>
                     Work Experience
                 </div>
             </div>

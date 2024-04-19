@@ -13,7 +13,7 @@ function Education() {
                 <div className='school-logo-container'>
                     <SchoolIcon className='school-logo' fontSize='40px' style={{ color: "white" }} />
                 </div>
-                <div>
+                <div className='section-title'>
                     Education
                 </div>
             </div>

@@ -36,7 +36,11 @@
     }
 
     .tiles-ul>li {
-        font-size: 10px;
+        font-size: 11px;
+    }
+
+    .tiles-ul>li:nth-child(1){
+        font-size: 14px !important;
     }
 }
 

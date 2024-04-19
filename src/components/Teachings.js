@@ -13,7 +13,7 @@ function Teachings() {
                     <div className='school-logo-container'>
                         <LocalLibraryIcon className='school-logo' fontSize='20px' style={{ color: "white" }} />
                     </div>
-                    <div>
+                    <div className='section-title'>
                         Teaching Experience
                     </div>
                 </div>

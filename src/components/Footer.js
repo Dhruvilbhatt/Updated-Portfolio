@@ -24,10 +24,18 @@ function Footer() {
     return (
         <div className='footer-container' id="footer-id">
             <div className='side-link-wrapper'>
-                <LinkedInIcon sx={{ fontSize: 40 }} />
-                <GitHubIcon sx={{ fontSize: 40 }} />
-                <MailOutlineIcon sx={{ fontSize: 40 }} />
-                <ContactPageIcon sx={{ fontSize: 40 }} />
+                <a href="https://www.linkedin.com/in/dhruvil-bhatt-uci/" target="_blank" rel="noreferrer">
+                    <LinkedInIcon sx={{ fontSize: 40, color: 'white' }} />
+                </a>
+                <a href="https://github.com/Dhruvilbhatt" target="_blank" rel="noreferrer">
+                    <GitHubIcon sx={{ fontSize: 40, color: 'white' }} />
+                </a>
+                <a href="mailto:bhattdb@uci.edu" rel="noreferrer">
+                    <MailOutlineIcon sx={{ fontSize: 40, color: 'white' }} />
+                </a>
+                <a href="/Dhruvil-Bhatt-Resume.pdf" download="Dhruvil_Bhatt_Resume.pdf">
+                    <ContactPageIcon sx={{ fontSize: 40, color: 'white' }} />
+                </a>
             </div>
         </div>
     )
