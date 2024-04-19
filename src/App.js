@@ -14,8 +14,16 @@ import Modal from './components/Modal_Synaptics';
 import UpdatedTiles from './components/UpdatedTiles';
 
 function App() {
+  const outofFocusTerminal = () => {
+    var prevCursorDiv = document.getElementById("cursor-command-line");
+
+    if (prevCursorDiv) {
+      prevCursorDiv.style.display = "none";
+    }
+  }
+
   return (
-    <div>
+    <div id="app-outer-div" style={{ pointerEvents: "all" }} onClick={outofFocusTerminal}>
       <Footer />
       <Navbar />
       <LandingPage />

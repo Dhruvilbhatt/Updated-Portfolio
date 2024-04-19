@@ -6,6 +6,32 @@
     border: 1px solid gray;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     cursor: wait;
+    z-index: 10000;
+    pointer-events: all;
+}
+
+@media screen and (max-width: 600px) {
+    .terminal-base-class {
+        width: 350px;
+        height: 250px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .terminal-shell-class {
+        font-size: 10px !important;
+        padding-bottom: 5px;
+    }
+
+    .cursor-command-line {
+        width: 8px !important;
+        height: 15px !important;
+    }
+
+    .cursor-command-line-pre {
+        width: 8px !important;
+        height: 15px !important;
+    }
 }
 
 .terminal-header-class {
@@ -67,7 +93,7 @@
     padding-left: 10px;
     padding-right: 10px;
     /* min-height: 88%; */
-    max-height: 92%;
+    max-height: calc(100% - 30px);
     font-size: 14px;
     font-family: 'Fira Code', monospace;
     overflow: scroll;

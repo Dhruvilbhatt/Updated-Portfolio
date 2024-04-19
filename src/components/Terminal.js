@@ -3,16 +3,19 @@ import "../Styles/Terminal.css";
 import File from "../assets/file.png";
 
 function Terminal({ setButtonVisible }) {
-  const [input, setInput] = useState("");
-  const focusInput = () => {
-    var el = document.getElementById("span-class");
-    el.focus();
-    if (el.length > 0) el.setSelectionRange(el.length, el.length);
-  };
+  const focusInput = (e) => {
+    e?.stopPropagation();
+    var prevCursorDiv = document.getElementById("cursor-command-line");
 
-  useEffect(() => {
-    focusInput();
-  }, []);
+    if (prevCursorDiv) {
+      prevCursorDiv.style.display = "block";
+    }
+
+    var prevSpanDiv = document.getElementById("span-class");
+    prevSpanDiv.focus();
+    document.execCommand('selectAll', false, null);
+    document.getSelection().collapseToEnd();
+  };
 
   const removeCursor = (prevSpanDiv) => {
     var prevCursorDiv = document.getElementById("cursor-command-line");
@@ -635,7 +638,7 @@ function Terminal({ setButtonVisible }) {
       var spanDiv = document.getElementById("span-class");
       spanDiv.setAttribute("contenteditable", "false");
       var terminalBaseDiv = document.getElementById("terminal-base-class");
-      
+
     }, 0);
     setTimeout(() => {
       var cursorDiv = document.getElementById("cursor-command-line");
@@ -661,7 +664,7 @@ function Terminal({ setButtonVisible }) {
     <div id="terminal-base-class" className="terminal-base-class" onClick={focusInput}>
       <div className="terminal-header-class">
         <div className="terminal-icons">
-          <div className="red-icon" id="red-icon"onClick={() => setButtonVisible(true)} />
+          <div className="red-icon" id="red-icon" onClick={() => setButtonVisible(true)} />
           <div className="yellow-icon" id="yellow-icon" onClick={() => setButtonVisible(true)} />
           <div className="green-icon" id="green-icon" onClick={() => setButtonVisible(true)} />
         </div>

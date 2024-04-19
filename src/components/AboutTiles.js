@@ -21,8 +21,11 @@ function AboutTiles({ setButtonVisible }) {
           className="red-icon-tiles"
           id="red-icon-tiles"
           onClick={() => setButtonVisible(true)}
+          // style={{color: "black", fontFamily: "sans-serif"}}
         >
-          <CloseIcon fontSize="small" sx={{ color: "black" }} />
+          {/* X */}
+          {/* <CloseIcon fontSize="small" sx={{ color: "black", paddingLeft: "0.6px", paddingBottom: "0.2px" }} /> */}
+          <CloseIcon fontSize="small" sx={{ color: "black", paddingLeft: "0.75px", paddingBottom: "0.2px" }} />
         </div>
         <ul className="tiles-ul" id="list">
           <li class="leaf">Software Engineer</li>
