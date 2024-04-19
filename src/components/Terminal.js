@@ -656,11 +656,11 @@ function Terminal({ setButtonVisible }) {
       var yellowIcon = document.getElementById("yellow-icon");
       yellowIcon.style.pointerEvents = "all";
       yellowIcon.style.cursor = "pointer";
-      redIcon.addEventListener("click", () => setButtonVisible(true));
+      yellowIcon.addEventListener("click", () => setButtonVisible(true));
       var greenIcon = document.getElementById("green-icon");
       greenIcon.style.pointerEvents = "all";
       greenIcon.style.cursor = "pointer";
-      redIcon.addEventListener("click", () => setButtonVisible(true));
+      greenIcon.addEventListener("click", () => setButtonVisible(true));
     }, 3000);
   }, []);
 
