@@ -559,7 +559,7 @@ function Terminal({ setButtonVisible }) {
           .setAttribute("contenteditable", "false");
         var prevSpanDiv = document.getElementById("span-class");
         prevSpanDiv.innerText = prevSpanDiv.innerText.trim();
-
+        
         switch (prevSpanDiv.innerText) {
           case "":
             removeCursor(prevSpanDiv);

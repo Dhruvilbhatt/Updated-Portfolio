@@ -8,14 +8,14 @@
     cursor: wait;
     z-index: 10000;
     pointer-events: all;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {
     .terminal-base-class {
         width: 350px;
         height: 250px;
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
 
     .terminal-shell-class {
@@ -31,6 +31,14 @@
     .cursor-command-line-pre {
         width: 8px !important;
         height: 15px !important;
+    }
+
+    .prefix-command-line {
+        min-width: 162.5px !important;
+    }
+
+    .prefix-command-line-pre {
+        min-width: 162.5px !important;
     }
 }
 
@@ -109,6 +117,11 @@
 
 .input-command {
     display: flex;
+    line-height: 18.2px;
+    /* height: 18.2px; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
 }
 
 .user-input-class {
@@ -130,6 +143,7 @@
 }
 
 .span-class {
+    white-space: nowrap;
     color: yellow;
     min-width: 2px;
     max-width: 100%;
@@ -137,8 +151,8 @@
     outline: none;
     border: none;
     caret-color: transparent;
-
-    overflow: auto;
+    overflow: hidden;
+    padding: 0px;
 }
 
 .start-terminal-class {
@@ -171,6 +185,7 @@
 
 
 .prefix-command-line-pre {
+    min-width: 227.5px;
     margin-right: 5px;
     color: #fa5454;
     letter-spacing: 0.05em;
@@ -250,6 +265,9 @@
 }
 
 .prefix-command-line {
+    white-space: nowrap;
+    min-width: 227.5px;
+    max-height: 18.2px;
     margin-right: 5px;
     color: #fa5454;
     letter-spacing: 0.05em;
