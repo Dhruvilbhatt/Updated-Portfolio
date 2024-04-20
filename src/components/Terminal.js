@@ -142,7 +142,7 @@ function Terminal({ setButtonVisible }) {
     var invalidCmdDiv = document.createElement("div");
     var invalidCmdSpan = document.createElement("span");
     invalidCmdSpan.style.color = "#66C2CD";
-    invalidCmdSpan.innerHTML = "help";
+    invalidCmdSpan.innerHTML = "ls";
     invalidCmdDiv.innerHTML = "zsh: command not found. Type&nbsp;";
     invalidCmdDiv.appendChild(invalidCmdSpan);
     invalidCmdDiv.innerHTML += "&nbsp;to list all commands";
@@ -569,7 +569,7 @@ function Terminal({ setButtonVisible }) {
             clearCommand();
             break;
 
-          case "help":
+          case "ls":
             removeCursor(prevSpanDiv);
             helpCommand();
             break;
@@ -697,7 +697,7 @@ function Terminal({ setButtonVisible }) {
           <span>.</span>
         </div>
         <div className="type-terminal-class" style={{ color: "#66C2CD" }}>
-          # Type 'help' to list all commands
+          # Type 'ls' to list all commands
         </div>
         <div className="input-command" id="input-command">
           <div className="prefix-command-line-pre">
