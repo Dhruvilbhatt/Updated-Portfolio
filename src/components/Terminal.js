@@ -417,7 +417,7 @@ function Terminal({ setButtonVisible }) {
     pointTwo.innerHTML = `* Devised a responsive `;
     var pointTwoSpan = document.createElement("span");
     pointTwoSpan.style.color = "#66C2CD";
-    pointTwoSpan.innerHTML = "DocLab, an AI-powered document editor";
+    pointTwoSpan.innerHTML = "job search portal with social media functionality";
     pointTwo.appendChild(pointTwoSpan);
     pointTwo.innerHTML +=
       " for job postings. Implemented theme toggling and integrated Google API for latest news feature. Utilized MongoDB with Mongoose for CRUD operations and Recoil for state management, enhancing application performance.";
