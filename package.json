@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vercel/analytics": "^1.2.2",
     "animejs": "^3.2.2",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",

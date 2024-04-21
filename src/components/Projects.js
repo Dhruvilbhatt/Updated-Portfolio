@@ -45,10 +45,10 @@ function Projects() {
                             </defs>
                         </svg>
                         <p class="card-title">DocLab - Work Smarter, Collaborate Better</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Worked in a collaborative environment to develop DocLab, an innovative AI-powered document editor featuring auto text correction, paraphrasing, summarization, collaboration, and video calling support.</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Consolidated video calling and screen-sharing capabilities, ensuring a low video/audio latency of 300ms.</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Deployed the Flask-based AI model on AWS EC2 for scalable and reliable access to DocLab's AI features.</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Designed RESTful Web Services and APIs with Axios for seamless frontend-backend communication and MongoDB CRUD operations, ensuring fast page load time (&lt; 2 seconds).</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Worked in a collaborative environment to develop DocLab, an innovative AI-powered document editor featuring auto text correction, paraphrasing, summarization, collaboration, and video calling support.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Consolidated video calling and screen-sharing capabilities, ensuring a low video/audio latency of 300ms.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Deployed the Flask-based AI model on AWS EC2 for scalable and reliable access to DocLab's AI features.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Designed RESTful Web Services and APIs with Axios for seamless frontend-backend communication and MongoDB CRUD operations, ensuring fast page load time (&lt; 2 seconds).</p>
                     </div>
                 </div>
 
@@ -77,10 +77,10 @@ function Projects() {
                             </defs>
                         </svg>
                         <p class="card-title">Real-Time Chat App</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Coded a real time web app for chatting, synced with Google account. Users can converse with multiple contacts, and can see whether another person is currently logged in or not.</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Accomplished real-time communication using WebSockets and Node.js.</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Designed front-end of the web app leveraging Material UI components, and React.</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Handled user authentication and storage of user, conversation, and message information through MongoDB.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Coded a real time web app for chatting, synced with Google account. Users can converse with multiple contacts, and can see whether another person is currently logged in or not.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Accomplished real-time communication using WebSockets and Node.js.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Designed front-end of the web app leveraging Material UI components, and React.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Handled user authentication and storage of user, conversation, and message information through MongoDB.</p>
                     </div>
                 </div>
 
@@ -103,9 +103,14 @@ function Projects() {
                             </defs>
                         </svg>
                         <p class="card-title">Job Search Portal</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Launched a responsive social media platform, allowing users to post job seeking/opening information.</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Accomplished theme toggle between 2 themes, and utilized Google API for the latest news posting feature.</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Executed MongoDB CRUD operations using Mongoose, and utilized Recoil to manage state of application and improve performance (Link to web app).</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Launched a responsive social media platform, allowing users to post job seeking/opening information.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Accomplished theme toggle between 2 themes, and utilized Google API for the latest news posting feature.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Executed MongoDB CRUD operations using Mongoose, and utilized Recoil to manage state of application and improve performance <a
+                            href="https://job-search-website.vercel.app/"
+                            className="paper-link"
+                            target="_blank"
+                            rel="noreferrer"
+                        >(Link to web app)</a>.</p>
                     </div>
                 </div>
 
@@ -128,8 +133,8 @@ function Projects() {
                             </defs>
                         </svg>
                         <p class="card-title">Hierarchical Clustering of World Cuisines</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Characterized the unique features that are central to 25 different world cuisines in an attempt to establish inter-relatedness of these world cuisines (using FP-Growth Algorithm).</p>
-                        <p class="card-description"><span style={{marginRight: '5px'}}>•</span> Generated 3 dendrograms (for distinct distance metrics) to visualize the interrelationship between different world cuisines using the concept of Hierarchical Clustering.</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Characterized the unique features that are central to 25 different world cuisines in an attempt to establish inter-relatedness of these world cuisines (using FP-Growth Algorithm).</p>
+                        <p class="card-description"><span style={{ marginRight: '5px' }}>•</span> Generated 3 dendrograms (for distinct distance metrics) to visualize the interrelationship between different world cuisines using the concept of Hierarchical Clustering.</p>
                     </div>
                 </div>
             </div>
