@@ -23,7 +23,7 @@ function Modal_Synaptics({ modal, setModal }) {
                 </div>
                 <div className='modal-role-container'>
                     <WorkIcon />
-                    <div>Audio Software Intern</div>
+                    <div>Software Engineer Intern</div>
                 </div>
                 <ul>
                     <li className='modal-div'>Engineered an Azure-based calling application integrating Microsoft Graph API v1.0 and MSAL (Microsoft Authentication Library) with Synaptics' headsets for audio testing.</li>
