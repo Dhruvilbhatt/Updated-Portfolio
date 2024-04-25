@@ -5,6 +5,7 @@ import IPR_bg from '../assets/IPR.jpg'
 import IIT_B_bg from '../assets/IIT_B.jpg'
 import Comp_Fin_bg from '../assets/Comp_Fin.jpg'
 import LMS_bg from '../assets/LMS.png'
+import GO_bg from '../assets/GO.png'
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import Modal_Synaptics from './Modal_Synaptics';
 import Modal_HuddleUp from './Modal_HuddleUp';
@@ -13,8 +14,10 @@ import Modal_IIT from './Modal_IIT';
 import Modal_IPR from './Modal_IPR';
 import $ from 'jquery';
 import { Power3 } from 'gsap'
+import Modal_QBurst from './Modal_QBurst'
 
 function Experience() {
+    const [modalQBurst, setModalQBurst] = useState(false);
     const [modalSyn, setModalSyn] = useState(false);
     const [modalHud, setModalHud] = useState(false);
     const [modalDA, setModalDA] = useState(false);
@@ -251,6 +254,7 @@ function Experience() {
 
     return (
         <div className='experience-outer-container' name="Experience">
+            <Modal_QBurst modal={modalQBurst} setModal={setModalQBurst} />
             <Modal_Synaptics modal={modalSyn} setModal={setModalSyn} />
             <Modal_HuddleUp modal={modalHud} setModal={setModalHud} />
             <Modal_DA modal={modalDA} setModal={setModalDA} />
@@ -284,9 +288,28 @@ function Experience() {
                                 <div class="slide is-active ">
                                     <div class="slide-content">
                                         <div class="caption">
+                                            <div class="title">QBurst</div>
+                                            <div class="text">
+                                                <p>Software Engineer Intern</p>
+                                            </div>
+                                            {/* <div class="text">
+                                                <p>June 2023 - September 2023</p>
+                                            </div> */}
+                                            <a style={{ cursor: 'pointer' }} onClick={() => setModalQBurst(true)} class="btn">
+                                                <span class="btn-inner">Learn More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="image-container">
+                                        <img src={GO_bg} alt="" class="image" />
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="slide-content">
+                                        <div class="caption">
                                             <div class="title">Synaptics</div>
                                             <div class="text">
-                                                <p>Audio Software Intern</p>
+                                                <p>Software Engineer Intern</p>
                                             </div>
                                             {/* <div class="text">
                                                 <p>June 2023 - September 2023</p>
