@@ -274,6 +274,15 @@ function Terminal({ setButtonVisible }) {
     var parentDiv = document.createElement("div");
     parentDiv.style.marginTop = "17px";
 
+    var pointZero = document.createElement("div");
+    pointZero.style.marginTop = "7px";
+    pointZero.innerHTML = `* `;
+    var pointZeroSpan = document.createElement("span");
+    pointZeroSpan.style.color = "#66C2CD";
+    pointZeroSpan.innerHTML = "Amazon Web Services (Seattle, USA)";
+    pointZero.appendChild(pointZeroSpan);
+    pointZero.innerHTML += " - Software Engineer (ML)";
+
     var pointOne = document.createElement("div");
     pointOne.style.marginTop = "7px";
     pointOne.innerHTML = `* `;
@@ -332,6 +341,7 @@ function Terminal({ setButtonVisible }) {
     pointSix.appendChild(pointSixSpan);
     pointSix.innerHTML += " - Software Engineer Intern";
 
+    parentDiv.appendChild(pointZero);
     parentDiv.appendChild(pointOne);
     parentDiv.appendChild(pointTwo);
     parentDiv.appendChild(pointThree);

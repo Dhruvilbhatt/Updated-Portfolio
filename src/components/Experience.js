@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../Styles/Experience.css'
 import synaptics_bg from '../assets/Synaptics_Fun_Activity.jpg'
+import AWS_Bedrock_Dark from '../assets/AWS_Bedrock_Dark.png'
 import IPR_bg from '../assets/IPR.jpg'
 import IIT_B_bg from '../assets/IIT_B.jpg'
 import Comp_Fin_bg from '../assets/Comp_Fin.jpg'
@@ -15,8 +16,10 @@ import Modal_IPR from './Modal_IPR';
 import $ from 'jquery';
 import { Power3 } from 'gsap'
 import Modal_QBurst from './Modal_QBurst'
+import Modal_AWS from './Modal_AWS'
 
 function Experience() {
+    const [modalAWS, setModalAWS] = useState(false);
     const [modalQBurst, setModalQBurst] = useState(false);
     const [modalSyn, setModalSyn] = useState(false);
     const [modalHud, setModalHud] = useState(false);
@@ -254,6 +257,7 @@ function Experience() {
 
     return (
         <div className='experience-outer-container' name="Experience">
+            <Modal_AWS modal={modalAWS} setModal={setModalAWS} />
             <Modal_QBurst modal={modalQBurst} setModal={setModalQBurst} />
             <Modal_Synaptics modal={modalSyn} setModal={setModalSyn} />
             <Modal_HuddleUp modal={modalHud} setModal={setModalHud} />
@@ -286,6 +290,25 @@ function Experience() {
                         <div class="slideshow-inner">
                             <div class="slides">
                                 <div class="slide is-active ">
+                                    <div class="slide-content">
+                                        <div class="caption">
+                                            <div class="title">Amazon Web Services</div>
+                                            <div class="text">
+                                                <p>Software Engineer (Machine Learning)</p>
+                                            </div>
+                                            {/* <div class="text">
+                                                <p>June 2023 - September 2023</p>
+                                            </div> */}
+                                            <a style={{ cursor: 'pointer' }} onClick={() => setModalAWS(true)} class="btn">
+                                                <span class="btn-inner">Learn More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="image-container">
+                                        <img src={AWS_Bedrock_Dark} alt="" class="image" />
+                                    </div>
+                                </div>
+                                <div class="slide">
                                     <div class="slide-content">
                                         <div class="caption">
                                             <div class="title">QBurst</div>
@@ -417,6 +440,12 @@ function Experience() {
                                 </div>
                                 <div class="item">
                                     <span class="icon">5</span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon">6</span>
+                                </div>
+                                <div class="item">
+                                    <span class="icon">7</span>
                                 </div>
                             </div>
                             <div class="arrows">
