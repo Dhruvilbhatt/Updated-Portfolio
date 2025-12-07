@@ -555,7 +555,7 @@ footer span i {
     cursor: pointer;
     border: 1px solid transparent;
     background: var(--color-red) url(https://i.postimg.cc/wBXGXbWN/pixel.png);
-    transition-delay: 0.2s;
+    transition-delay: 0.7s;
     background-size: 180px;
     -webkit-animation: animate var(--speed-fast) steps(8) forwards;
     animation: animate var(--speed-fast) steps(8) forwards;

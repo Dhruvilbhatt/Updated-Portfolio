@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LandImg from "../assets/SF_Pic.jpg";
+import LandImg from "../assets/Landing_Page.jpg";
 import blurred_bg from "../assets/blurred-bg.webp";
 import "../Styles/LandingPage.css";
 import { Element } from "react-scroll";
