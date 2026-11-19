@@ -1,39 +1,23 @@
-import './Styles/App.css';
-import Education from './components/Education';
-import LandingPage from './components/LandingPage';
-import Navbar from './components/Navbar';
-import { useEffect, useState } from 'react';
-import Tiles from './components/Tiles';
-import GM from './components/GM';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Publications from './components/Publications';
-import Teachings from './components/Teachings';
-import Footer from './components/Footer';
-import Modal from './components/Modal_Synaptics';
-import UpdatedTiles from './components/UpdatedTiles';
+import "./site/site.css";
+import { Footer, Nav } from "./site/Layout";
+import { Hero } from "./site/Hero";
+import { Stack } from "./site/Stack";
+import { Experience } from "./site/Experience";
+import { Research } from "./site/Research";
+import { Cli } from "./site/Cli";
 
 function App() {
-  const outofFocusTerminal = () => {
-    var prevCursorDiv = document.getElementById("cursor-command-line");
-
-    if (prevCursorDiv) {
-      prevCursorDiv.style.display = "none";
-    }
-  }
-
   return (
-    <div id="app-outer-div" style={{ pointerEvents: "all" }} onClick={outofFocusTerminal}>
+    <div className="site">
+      <Nav />
+      <main>
+        <Hero />
+        <Stack />
+        <Experience />
+        <Research />
+        <Cli />
+      </main>
       <Footer />
-      <Navbar />
-      <LandingPage />
-      <UpdatedTiles />
-      <GM />
-      <Education />
-      <Experience />
-      <Projects />
-      <Publications />
-      <Teachings />
     </div>
   );
 }
